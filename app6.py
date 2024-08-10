@@ -3,13 +3,13 @@ from spotipy.oauth2 import SpotifyOAuth
 import requests
 
 # Spotify API bilgileri
-SPOTIPY_CLIENT_ID = 'c26cbdc3d49747fda239d5add421b533'
-SPOTIPY_CLIENT_SECRET = '5ec4ea0331014f879a7b6263042c415b'
+SPOTIPY_CLIENT_ID = '***'
+SPOTIPY_CLIENT_SECRET = '***'
 SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
 
 # SoundCloud API bilgileri
-SOUNDCLOUD_AUTH_TOKEN = '2-296399-347324420-c3axJHGtf2ugpK'
-SOUNDCLOUD_CLIENT_ID = 'nFddmw3ZibOug7XKUPPyXjYCElJCcGcv'
+SOUNDCLOUD_AUTH_TOKEN = '***'
+SOUNDCLOUD_CLIENT_ID = '***'
 
 # Spotify API ile bağlantı kurma
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
@@ -20,7 +20,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
 ))
 
 # Çalma listesi ID'si
-spotify_playlist_id = '3y8JUgHStIHbaTx54vtlnI'
+spotify_playlist_id = '***'
 
 # Spotify'dan çalma listesi bilgilerini alma
 playlist = sp.playlist_tracks(spotify_playlist_id)
